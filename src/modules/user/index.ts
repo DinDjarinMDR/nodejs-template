@@ -89,6 +89,6 @@ router.patch('/:id', isAuthenticated, updateUserHandler);
  *        description: Server error
  */
 router.post('/', createUserHandler);
-router.post('/list', listUserHandler);
+router.get('/list', listUserHandler);
 
 export default router;
